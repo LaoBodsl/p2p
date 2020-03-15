@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generate.AccountDao">
+  <resultMap id="BaseResultMap" type="generate.Account">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="tradePassword" jdbcType="VARCHAR" property="tradepassword" />
+    <result column="usableAmount" jdbcType="DECIMAL" property="usableamount" />
+    <result column="freezedAmount" jdbcType="DECIMAL" property="freezedamount" />
+    <result column="borrowLimit" jdbcType="DECIMAL" property="borrowlimit" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="unReceiveInterest" jdbcType="DECIMAL" property="unreceiveinterest" />
+    <result column="unReceivePrincipal" jdbcType="DECIMAL" property="unreceiveprincipal" />
+    <result column="unReturnAmount" jdbcType="DECIMAL" property="unreturnamount" />
+    <result column="remainBorrowLimit" jdbcType="DECIMAL" property="remainborrowlimit" />
+    <result column="verifyCode" jdbcType="VARCHAR" property="verifycode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, tradePassword, usableAmount, freezedAmount, borrowLimit, version, unReceiveInterest, 
+    unReceivePrincipal, unReturnAmount, remainBorrowLimit, verifyCode
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from account
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from account
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="generate.Account" useGeneratedKeys="true">
+    insert into account (tradePassword, usableAmount, freezedAmount, 
+      borrowLimit, version, unReceiveInterest, 
+      unReceivePrincipal, unReturnAmount, remainBorrowLimit, 
+      verifyCode)
+    values (#{tradepassword,jdbcType=VARCHAR}, #{usableamount,jdbcType=DECIMAL}, #{freezedamount,jdbcType=DECIMAL}, 
+      #{borrowlimit,jdbcType=DECIMAL}, #{version,jdbcType=INTEGER}, #{unreceiveinterest,jdbcType=DECIMAL}, 
+      #{unreceiveprincipal,jdbcType=DECIMAL}, #{unreturnamount,jdbcType=DECIMAL}, #{remainborrowlimit,jdbcType=DECIMAL}, 
+      #{verifycode,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="generate.Account" useGeneratedKeys="true">
+    insert into account
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tradepassword != null">
+        tradePassword,
+      </if>
+      <if test="usableamount != null">
+        usableAmount,
+      </if>
+      <if test="freezedamount != null">
+        freezedAmount,
+      </if>
+      <if test="borrowlimit != null">
+        borrowLimit,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="unreceiveinterest != null">
+        unReceiveInterest,
+      </if>
+      <if test="unreceiveprincipal != null">
+        unReceivePrincipal,
+      </if>
+      <if test="unreturnamount != null">
+        unReturnAmount,
+      </if>
+      <if test="remainborrowlimit != null">
+        remainBorrowLimit,
+      </if>
+      <if test="verifycode != null">
+        verifyCode,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tradepassword != null">
+        #{tradepassword,jdbcType=VARCHAR},
+      </if>
+      <if test="usableamount != null">
+        #{usableamount,jdbcType=DECIMAL},
+      </if>
+      <if test="freezedamount != null">
+        #{freezedamount,jdbcType=DECIMAL},
+      </if>
+      <if test="borrowlimit != null">
+        #{borrowlimit,jdbcType=DECIMAL},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="unreceiveinterest != null">
+        #{unreceiveinterest,jdbcType=DECIMAL},
+      </if>
+      <if test="unreceiveprincipal != null">
+        #{unreceiveprincipal,jdbcType=DECIMAL},
+      </if>
+      <if test="unreturnamount != null">
+        #{unreturnamount,jdbcType=DECIMAL},
+      </if>
+      <if test="remainborrowlimit != null">
+        #{remainborrowlimit,jdbcType=DECIMAL},
+      </if>
+      <if test="verifycode != null">
+        #{verifycode,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="generate.Account">
+    update account
+    <set>
+      <if test="tradepassword != null">
+        tradePassword = #{tradepassword,jdbcType=VARCHAR},
+      </if>
+      <if test="usableamount != null">
+        usableAmount = #{usableamount,jdbcType=DECIMAL},
+      </if>
+      <if test="freezedamount != null">
+        freezedAmount = #{freezedamount,jdbcType=DECIMAL},
+      </if>
+      <if test="borrowlimit != null">
+        borrowLimit = #{borrowlimit,jdbcType=DECIMAL},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="unreceiveinterest != null">
+        unReceiveInterest = #{unreceiveinterest,jdbcType=DECIMAL},
+      </if>
+      <if test="unreceiveprincipal != null">
+        unReceivePrincipal = #{unreceiveprincipal,jdbcType=DECIMAL},
+      </if>
+      <if test="unreturnamount != null">
+        unReturnAmount = #{unreturnamount,jdbcType=DECIMAL},
+      </if>
+      <if test="remainborrowlimit != null">
+        remainBorrowLimit = #{remainborrowlimit,jdbcType=DECIMAL},
+      </if>
+      <if test="verifycode != null">
+        verifyCode = #{verifycode,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="generate.Account">
+    update account
+    set tradePassword = #{tradepassword,jdbcType=VARCHAR},
+      usableAmount = #{usableamount,jdbcType=DECIMAL},
+      freezedAmount = #{freezedamount,jdbcType=DECIMAL},
+      borrowLimit = #{borrowlimit,jdbcType=DECIMAL},
+      version = #{version,jdbcType=INTEGER},
+      unReceiveInterest = #{unreceiveinterest,jdbcType=DECIMAL},
+      unReceivePrincipal = #{unreceiveprincipal,jdbcType=DECIMAL},
+      unReturnAmount = #{unreturnamount,jdbcType=DECIMAL},
+      remainBorrowLimit = #{remainborrowlimit,jdbcType=DECIMAL},
+      verifyCode = #{verifycode,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
