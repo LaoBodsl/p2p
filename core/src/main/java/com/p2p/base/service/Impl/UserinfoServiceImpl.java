@@ -2,6 +2,7 @@ package com.p2p.base.service.Impl;
 
 import com.p2p.base.domain.Userinfo;
 import com.p2p.base.mapper.UserinfoMapper;
+import com.p2p.base.service.UserinfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +17,10 @@ public class UserinfoServiceImpl implements UserinfoService {
             throw new RuntimeException("乐观锁失败,Userinfo:"+userinfo.getId());
         }
     }
+
+    @Override
+    public void add(Userinfo userinfo) {
+        this.userinfoMapper.insert(userinfo);
+    }
+
 }

@@ -1,8 +1,12 @@
 package com.p2p.base.service.Impl;
 
+import com.p2p.base.domain.Account;
 import com.p2p.base.domain.Logininfo;
+import com.p2p.base.domain.Userinfo;
 import com.p2p.base.mapper.LogininfoMapper;
+import com.p2p.base.service.IAcountService;
 import com.p2p.base.service.LogininnfoService;
+import com.p2p.base.service.UserinfoService;
 import com.p2p.base.util.MD5;
 import com.p2p.base.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +17,13 @@ public class LogininfoServiceImpl implements LogininnfoService {
 
     @Autowired
     private LogininfoMapper logininfoMapper;
+
+    @Autowired
+    private UserinfoService userinfoService;
+
+    @Autowired
+    private IAcountService iAcountService;
+
     @Override
     public void register(String username, String password) {
         //判断是否存在
@@ -24,6 +35,14 @@ public class LogininfoServiceImpl implements LogininnfoService {
             li.setPassword(MD5.encode(password));
             li.setState(Logininfo.STATE_NORMAl);
             this.logininfoMapper.insert(li);
+
+            //初始化用户信息
+            Account account = new Account();
+            account.setId(li.getId());
+            this.iAcountService.add(account);
+            Userinfo ui = new Userinfo();
+            ui.setId(li.getId());
+            this.userinfoService.add(ui);
         }else {
             //如果存在
             throw new RuntimeException("用户名已存在");

@@ -18,4 +18,10 @@ public class IAcountServiceImpl implements IAcountService {
             throw new RuntimeException("乐观锁失败,Account+:"+account.getId());
         }
     }
+
+    @Override
+    public void add(Account account) {
+        this.accountMapper.insert(account);
+    }
+
 }
