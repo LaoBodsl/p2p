@@ -19,5 +19,9 @@ public class Account extends BaseDomain{
     private BigDecimal remainBorrowLimit = BidConst.INIT_BORROW_LIMIT;
     private BigDecimal borrowLimit = BidConst.INIT_BORROW_LIMIT;
 
+    public BigDecimal getTotalAmount(){
+        return usableAmount.add(this.freezedAmount).add(this.unReceivePrincipal);
+    }
+
 
 }

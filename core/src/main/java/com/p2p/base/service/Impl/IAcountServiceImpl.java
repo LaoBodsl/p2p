@@ -24,4 +24,9 @@ public class IAcountServiceImpl implements IAcountService {
         this.accountMapper.insert(account);
     }
 
+    @Override
+    public Account get(long id) {
+        return this.accountMapper.selectByPrimaryKey(id);
+    }
+
 }

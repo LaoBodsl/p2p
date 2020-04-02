@@ -9,11 +9,11 @@
     <result column="idNumber" property="idNumber" jdbcType="VARCHAR" />
     <result column="phoneNumber" property="phoneNumber" jdbcType="VARCHAR" />
 
-    <association property="incomeGrade" javaType="com.p2p.base.domain.SystemDictionaryItem" column="incomeGrade_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
-    <association property="marriage" javaType="com.p2p.base.domain.SystemDictionaryItem" column="marriage_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
-    <association property="kidCount" javaType="com.p2p.base.domain.SystemDictionaryItem" column="kidCount_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
-    <association property="educationBackground" javaType="com.p2p.base.domain.SystemDictionaryItem" column="educationBackground_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
-    <association property="houseCondition" javaType="com.p2p.base.domain.SystemDictionaryItem" column="houseCondition_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
+    <association property="incomeGrade" javaType="com.p2p.base.domain.SystemDictionaryItem" column="incomeGrade_id" select="com.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
+    <association property="marriage" javaType="com.p2p.base.domain.SystemDictionaryItem" column="marriage_id" select="com.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
+    <association property="kidCount" javaType="com.p2p.base.domain.SystemDictionaryItem" column="kidCount_id" select="com.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
+    <association property="educationBackground" javaType="com.p2p.base.domain.SystemDictionaryItem" column="educationBackground_id" select="com.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
+    <association property="houseCondition" javaType="com.p2p.base.domain.SystemDictionaryItem" column="houseCondition_id" select="com.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
   </resultMap>
 
   <insert id="insert" parameterType="com.p2p.base.domain.Userinfo" useGeneratedKeys="true" keyProperty="id" >
@@ -43,9 +43,13 @@
     where id = #{id,jdbcType=BIGINT} AND version=#{version}
   </update>
 
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap">
-    select id, version, bitState, realName, idNumber, phoneNumber, incomeGrade_id, marriage_id, 
+  <sql id="base_column">
+    id, version, bitState, realName, idNumber, phoneNumber, incomeGrade_id, marriage_id,
     kidCount_id, educationBackground_id, houseCondition_id
+  </sql>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap">
+    select <include refid="base_column" />
     from `userinfo`
     where id = #{id,jdbcType=BIGINT}
   </select>

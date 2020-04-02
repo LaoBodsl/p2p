@@ -25,9 +25,4 @@
     where id = #{id,jdbcType=BIGINT}
   </select>
 
-  <select id="selectAll" resultMap="BaseResultMap" >
-    select id, sn, title
-    from `systemDictionary`
-  </select>
-
 </mapper>
