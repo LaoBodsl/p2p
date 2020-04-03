@@ -17,5 +17,5 @@ public interface LogininnfoService {
      */
     boolean checkUsername(String username);
 
-    Logininfo login(String username,String password);
+    Logininfo login(String username,String password,String ip);
 }

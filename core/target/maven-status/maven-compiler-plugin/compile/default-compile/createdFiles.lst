@@ -2,10 +2,12 @@ com/p2p/base/util/BidConst.class
 com/p2p/base/mapper/UserinfoMapper.class
 com/p2p/base/util/UserContext.class
 com/p2p/base/service/Impl/UserinfoServiceImpl.class
+com/p2p/base/mapper/IplogMapper.class
 com/p2p/base/service/Impl/IAcountServiceImpl.class
 com/p2p/base/domain/SystemDictionary.class
 com/p2p/base/util/JSONResult.class
 com/p2p/base/mapper/SystemDictionaryMapper.class
+com/p2p/base/domain/Iplog.class
 com/p2p/base/mapper/AccountMapper.class
 com/p2p/base/mapper/SystemDictionaryItemMapper.class
 com/p2p/base/domain/Account.class

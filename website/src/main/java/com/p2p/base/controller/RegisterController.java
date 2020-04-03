@@ -1,11 +1,14 @@
 package com.p2p.base.controller;
 
+import com.p2p.base.domain.Logininfo;
 import com.p2p.base.service.LogininnfoService;
 import com.p2p.base.util.JSONResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class RegisterController {
@@ -33,14 +36,15 @@ public class RegisterController {
 
     @RequestMapping("login")
     @ResponseBody
-    public JSONResult login(String username, String password){
+    public JSONResult login(String username, String password, HttpServletRequest request){
         JSONResult jsonResult = new JSONResult();
-        try {
-            this.logininnfoService.login(username,password);
-        } catch (Exception e) {
+
+        Logininfo current = this.logininnfoService.login(username,password,request.getRemoteAddr());
+        if(current==null) {
             jsonResult.setSuccess(false);
-            jsonResult.setMsg(e.getMessage());
+            jsonResult.setMsg("用户名或者密码错误!");
         }
+
         return jsonResult;
     }
 }

@@ -3,6 +3,7 @@
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Userinfo.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/Impl/IAcountServiceImpl.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/IplogMapper.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/JSONResult.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Account.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/SystemDictionary.java
@@ -19,3 +20,4 @@
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/IAcountService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/UserinfoService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/BidConst.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Iplog.java

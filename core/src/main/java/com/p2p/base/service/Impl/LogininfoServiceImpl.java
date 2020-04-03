@@ -1,8 +1,10 @@
 package com.p2p.base.service.Impl;
 
 import com.p2p.base.domain.Account;
+import com.p2p.base.domain.Iplog;
 import com.p2p.base.domain.Logininfo;
 import com.p2p.base.domain.Userinfo;
+import com.p2p.base.mapper.IplogMapper;
 import com.p2p.base.mapper.LogininfoMapper;
 import com.p2p.base.service.IAcountService;
 import com.p2p.base.service.LogininnfoService;
@@ -11,6 +13,8 @@ import com.p2p.base.util.MD5;
 import com.p2p.base.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 @Service
 public class LogininfoServiceImpl implements LogininnfoService {
@@ -24,6 +28,8 @@ public class LogininfoServiceImpl implements LogininnfoService {
     @Autowired
     private IAcountService iAcountService;
 
+    @Autowired
+    private IplogMapper iplogMapper;
     @Override
     public void register(String username, String password) {
         //判断是否存在
@@ -55,13 +61,19 @@ public class LogininfoServiceImpl implements LogininnfoService {
     }
 
     @Override
-    public Logininfo login(String username, String password) {
+    public Logininfo login(String username, String password,String ip) {
         Logininfo current = this.logininfoMapper.login(username,MD5.encode(password));
+        Iplog iplog = new Iplog();
+        iplog.setIp(ip);
+        iplog.setLoginTime(new Date());
+        iplog.setUserName(username);
         if(current!=null){
             UserContext.putCurrent(current);
+            iplog.setState(Iplog.STATE_SUCCESS);
         }else {
-            throw new RuntimeException("用户名或密码错误");
+            iplog.setState(Iplog.STATE_FAILED);
         }
-        return null;
+        iplogMapper.insert(iplog);
+        return current;
     }
 }
