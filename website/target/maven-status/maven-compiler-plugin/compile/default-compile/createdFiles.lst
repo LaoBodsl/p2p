@@ -1,2 +1,3 @@
 com/p2p/base/controller/RegisterController.class
 com/p2p/base/controller/PersonalController.class
+com/p2p/base/controller/IplogController.class

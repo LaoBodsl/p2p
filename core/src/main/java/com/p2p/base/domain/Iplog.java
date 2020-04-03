@@ -16,4 +16,8 @@ public class Iplog extends BaseDomain{
     private int state;
     private String userName;
     private Date loginTime;
+
+    public String getStateDisplay(){
+        return state == STATE_SUCCESS?"登录成功":"登录失败";
+    }
 }

@@ -7,11 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6335aed-9792-405d-a57a-4ecdcbf2d672" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/IplogQueryObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/QueryObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/IplogServicelmpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IplogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/iplog_list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Iplog.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Iplog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/IplogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/IplogMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/IplogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/IplogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/p2p.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/p2p.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,13 +66,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="p2p: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="p2p: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="iplog: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -67,62 +75,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IAcountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5700">
-              <caret line="300" column="8" lean-forward="true" selection-start-line="300" selection-start-column="8" selection-end-line="300" selection-end-column="8" />
+            <state relative-caret-position="2071">
+              <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IplogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="152">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/IplogServicelmpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+            <state relative-caret-position="57">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/iplog_list.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,20 +143,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="304">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/DateUtil.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="133">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -154,19 +171,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="-325">
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1064#1068#0" expanded="true" />
+                <element signature="e#1149#1153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,6 +196,9 @@
     <findStrings>
       <find>is</find>
       <find>isBindEm</find>
+      <find>登录</find>
+      <find>登录记录</find>
+      <find>ip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,9 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mgrsite/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/BaseDomain.java" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/MD5.java" />
@@ -234,13 +243,20 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/SystemDictionaryMapper.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/UserinfoMapper.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Account.java" />
-        <option value="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" />
         <option value="$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java" />
         <option value="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/QueryObject.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/PageResult.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/IplogQueryObject.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IplogService.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/IplogServicelmpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java" />
+        <option value="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java" />
+        <option value="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml" />
       </list>
     </option>
@@ -287,7 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,7 +354,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
@@ -349,17 +365,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p2p" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
@@ -409,11 +414,38 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p2p" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p2p" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p2p" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,7 +455,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -438,11 +470,11 @@
       <recent name="com.p2p.base.service.Impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/common" />
       <recent name="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views" />
-      <recent name="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/util" />
       <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util" />
-      <recent name="$PROJECT_DIR$/website/src/main/resources" />
+      <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query" />
+      <recent name="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/common" />
+      <recent name="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -554,17 +586,20 @@
       <workItem from="1584258668730" duration="9215000" />
       <workItem from="1584323265350" duration="134000" />
       <workItem from="1585664680009" duration="13989000" />
+      <workItem from="1585834266696" duration="3752000" />
+      <workItem from="1585897279050" duration="585000" />
+      <workItem from="1585897987367" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57768000" />
+    <option name="totallyTimeSpent" value="62612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75479454" visible="true" weight="0.23182553" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75479454" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.24520548" side_tool="true" weight="0.24959612" />
       <window_info id="Designer" order="3" />
@@ -572,7 +607,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.41095892" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49757674" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,7 +617,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5016155" side_tool="true" weight="0.23835616" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.26849315" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32876712" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
@@ -636,35 +671,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo" />
-    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/systemDictionary" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Systemdictionaryitem.java.1" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java">
@@ -780,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/IAcountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -804,13 +800,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/systemDictionaryItem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/systemDictionaryItem" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/UserinfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -832,48 +822,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/account">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/userinfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/account" />
+    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/userinfo" />
+    <entry file="das://9f0b3e41-f393-43aa-9bea-0ee72107080d/schema/p2p/table/logininfo" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/SystemDictionaryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -917,41 +868,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl">
+    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5700">
-          <caret line="300" column="8" lean-forward="true" selection-start-line="300" selection-start-column="8" selection-end-line="300" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="703">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IAcountService.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="493">
+          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="493">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -962,13 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/RegisterController.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="417">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -979,27 +916,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IAcountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/PageResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/QueryObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/IplogQueryObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/IplogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/IplogServicelmpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/iplog_list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Iplog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="133">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="-325">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#1064#1068#0" expanded="true" />
+            <element signature="e#1149#1153#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
