@@ -40,6 +40,7 @@ public class LogininfoServiceImpl implements LogininnfoService {
             li.setUsername(username);
             li.setPassword(MD5.encode(password));
             li.setState(Logininfo.STATE_NORMAl);
+            li.setUserType(Logininfo.USER_CLIENT);
             this.logininfoMapper.insert(li);
 
             //初始化用户信息
@@ -61,12 +62,14 @@ public class LogininfoServiceImpl implements LogininnfoService {
     }
 
     @Override
-    public Logininfo login(String username, String password,String ip) {
-        Logininfo current = this.logininfoMapper.login(username,MD5.encode(password));
+    public Logininfo login(String username, String password, String ip, int userType) {
+        Logininfo current = this.logininfoMapper.login(username,MD5.encode(password),userType);
         Iplog iplog = new Iplog();
         iplog.setIp(ip);
         iplog.setLoginTime(new Date());
         iplog.setUserName(username);
+        iplog.setUserType(userType);
+
         if(current!=null){
             UserContext.putCurrent(current);
             iplog.setState(Iplog.STATE_SUCCESS);

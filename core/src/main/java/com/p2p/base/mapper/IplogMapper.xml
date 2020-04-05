@@ -7,17 +7,18 @@
     <result column="state" property="state" jdbcType="TINYINT" />
     <result column="userName" property="userName" jdbcType="VARCHAR" />
     <result column="loginTime" property="loginTime" jdbcType="TIMESTAMP" />
+    <result column="userType" property="userType" jdbcType="TINYINT" />
   </resultMap>
 
   <insert id="insert" useGeneratedKeys="true" keyProperty="id" >
     insert into `iplog` (ip, state, userName, 
-      loginTime)
+      loginTime,userType)
     values (#{ip,jdbcType=VARCHAR}, #{state,jdbcType=TINYINT}, #{userName,jdbcType=VARCHAR},
-      #{loginTime,jdbcType=TIMESTAMP})
+      #{loginTime,jdbcType=TIMESTAMP},#{userType,jdbcType=TINYINT})
   </insert>
 
   <sql id="base_column">
-    id, ip, state, userName, loginTime
+    id, ip, state, userName, loginTime,userType
   </sql>
 
   <sql id="base_where">

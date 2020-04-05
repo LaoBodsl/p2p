@@ -39,7 +39,7 @@ public class RegisterController {
     public JSONResult login(String username, String password, HttpServletRequest request){
         JSONResult jsonResult = new JSONResult();
 
-        Logininfo current = this.logininnfoService.login(username,password,request.getRemoteAddr());
+        Logininfo current = this.logininnfoService.login(username,password,request.getRemoteAddr(),Logininfo.USER_CLIENT);
         if(current==null) {
             jsonResult.setSuccess(false);
             jsonResult.setMsg("用户名或者密码错误!");
