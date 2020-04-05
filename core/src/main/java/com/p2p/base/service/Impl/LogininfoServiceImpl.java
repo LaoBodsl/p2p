@@ -9,6 +9,7 @@ import com.p2p.base.mapper.LogininfoMapper;
 import com.p2p.base.service.IAcountService;
 import com.p2p.base.service.LogininnfoService;
 import com.p2p.base.service.UserinfoService;
+import com.p2p.base.util.BidConst;
 import com.p2p.base.util.MD5;
 import com.p2p.base.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,5 +79,18 @@ public class LogininfoServiceImpl implements LogininnfoService {
         }
         iplogMapper.insert(iplog);
         return current;
+    }
+
+    @Override
+    public void initAdmin() {
+        int count = this.logininfoMapper.getCountByUserType(Logininfo.USER_MANAGER);
+        if(count==0){
+            Logininfo admin = new Logininfo();
+            admin.setUsername(BidConst.DEFAULT_ADMIN_NAME);
+            admin.setPassword(MD5.encode(BidConst.DEFAULT_ADMIN_PASSWORD));
+            admin.setState(Logininfo.STATE_NORMAl);
+            admin.setUserType(Logininfo.USER_MANAGER);
+            this.logininfoMapper.insert(admin);
+        }
     }
 }

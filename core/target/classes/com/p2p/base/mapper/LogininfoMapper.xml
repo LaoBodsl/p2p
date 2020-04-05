@@ -49,6 +49,11 @@
     WHERE username = #{username} AND password = #{password} AND userType=#{userType}
   </select>
 
+  <select id="getCountByUserType" resultType="int">
+    SELECT count(id) FROM logininfo
+    where userType=#{userType}
+  </select>
+
 <!--  <select id="countByUserType" resultType="int">-->
 <!--    SELECT count(id) FROM logininfo WHERE userType = #{userType}-->
 <!--  </select>-->
