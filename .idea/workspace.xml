@@ -7,18 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6335aed-9792-405d-a57a-4ecdcbf2d672" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f0b3e41-f393-43aa-9bea-0ee72107080d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f0b3e41-f393-43aa-9bea-0ee72107080d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f0b3e41-f393-43aa-9bea-0ee72107080d/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f0b3e41-f393-43aa-9bea-0ee72107080d/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f0b3e41-f393-43aa-9bea-0ee72107080d/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/java/com/mgrsite/base/IplogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views/common/header.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views/common/menu.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views/common/top.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views/ipLog/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views/main.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/IplogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/LogininfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/LogininnfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/IplogQueryObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query/IplogQueryObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/LogininfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/LogininfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/Impl/LogininfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/Impl/LogininfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/p2p.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/p2p.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgrsite/src/main/java/com/mgrsite/listener/InitAdminListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/src/main/java/com/mgrsite/listener/InitAdminListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgrsite/target/tomcat/logs/access_log.2020-04-05" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/target/tomcat/logs/access_log.2020-04-05" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgrsite/src/main/java/com/mgrsite/base/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/src/main/java/com/mgrsite/base/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgrsite/target/classes/com/mgrsite/base/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/target/classes/com/mgrsite/base/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgrsite/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgrsite/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mgrsite/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +52,12 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p2p: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -103,7 +116,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mgrsite/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -118,11 +131,11 @@
       <recent name="com.p2p.base.service.Impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/mgrsite/src/main/webapp" />
       <recent name="$PROJECT_DIR$/mgrsite/src/main/resources" />
       <recent name="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util" />
-      <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/query" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.mgrsite [tomcat7:run]">
@@ -254,7 +267,7 @@
       <workItem from="1586045319322" duration="3262000" />
       <workItem from="1586060903340" duration="18000" />
       <workItem from="1586060937633" duration="424000" />
-      <workItem from="1586064601193" duration="4721000" />
+      <workItem from="1586064601193" duration="8251000" />
     </task>
     <servers />
   </component>
@@ -274,22 +287,22 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="328" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.709@0.23.1280.709" timestamp="1586060915067" />
-    <state width="1238" height="147" key="GridCell.Tab.0.bottom" timestamp="1586087943153">
+    <state width="1238" height="239" key="GridCell.Tab.0.bottom" timestamp="1586137280707">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586087943153" />
-    <state width="1238" height="147" key="GridCell.Tab.0.center" timestamp="1586087943152">
+    <state width="1238" height="239" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586137280707" />
+    <state width="1238" height="239" key="GridCell.Tab.0.center" timestamp="1586137280706">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586087943152" />
-    <state width="1238" height="147" key="GridCell.Tab.0.left" timestamp="1586087943151">
+    <state width="1238" height="239" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586137280706" />
+    <state width="1238" height="239" key="GridCell.Tab.0.left" timestamp="1586137280706">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586087943151" />
-    <state width="1238" height="147" key="GridCell.Tab.0.right" timestamp="1586087943152">
+    <state width="1238" height="239" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586137280706" />
+    <state width="1238" height="239" key="GridCell.Tab.0.right" timestamp="1586137280707">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586087943152" />
+    <state width="1238" height="239" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586137280707" />
   </component>
   <component name="masterDetails">
     <states>

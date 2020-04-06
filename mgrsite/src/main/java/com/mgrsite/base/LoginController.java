@@ -14,15 +14,30 @@ import javax.servlet.http.HttpServletRequest;
 public class LoginController {
     @Autowired
     LogininnfoService logininnfoService;
+
+    /**
+     * 后台登录
+     * @param username
+     * @param password
+     * @param request
+     * @return
+     */
     @RequestMapping("login")
     @ResponseBody
-    public JSONResult login(String username, String password, HttpServletRequest request){
+    public JSONResult login(String username, String password,
+                            HttpServletRequest request) {
         JSONResult json = new JSONResult();
-        Logininfo current = this.logininnfoService.login(username,password,request.getRemoteAddr(),Logininfo.USER_MANAGER);
-        if(current==null){
+        Logininfo current = this.logininnfoService.login(username, password,
+                request.getRemoteAddr(), Logininfo.USER_MANAGER);
+        if (current == null) {
             json.setSuccess(false);
-            json.setMsg("用户名或者密码错误");
+            json.setMsg("用户名或者密码错误!");
         }
         return json;
+    }
+
+    @RequestMapping("index")
+    public String index(){
+        return "main";
     }
 }

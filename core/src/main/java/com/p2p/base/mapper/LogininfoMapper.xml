@@ -46,7 +46,7 @@
   <select id="login" resultMap="baseResultMap">
     SELECT <include refid="base_column" />
     FROM logininfo
-    WHERE username = #{username} AND password = #{password} AND userType=#{userType}
+    WHERE username = #{username} AND password = #{password} AND userType = #{userType}
   </select>
 
   <select id="getCountByUserType" resultType="int">

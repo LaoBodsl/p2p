@@ -1,2 +1,3 @@
+com/mgrsite/base/IplogController.class
 com/mgrsite/base/LoginController.class
 com/mgrsite/listener/InitAdminListener.class

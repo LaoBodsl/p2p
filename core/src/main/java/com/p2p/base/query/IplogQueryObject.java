@@ -19,6 +19,7 @@ public class IplogQueryObject extends QueryObject {
     private Date endDate;
     private int state=-1;
     private String username;
+    private int userType=-1;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     public void setBeginDate(Date beginDate){
