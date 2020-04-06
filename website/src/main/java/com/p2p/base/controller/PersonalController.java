@@ -1,5 +1,6 @@
 package com.p2p.base.controller;
 
+import com.p2p.base.util.RequireLogin;
 import com.p2p.base.domain.Logininfo;
 import com.p2p.base.service.IAcountService;
 import com.p2p.base.service.UserinfoService;
@@ -17,6 +18,7 @@ public class PersonalController {
     @Autowired
     private IAcountService iAcountService;
 
+    @RequireLogin
     @RequestMapping("personal")
     public String personalCenter(Model model){
         Logininfo current = UserContext.getCurrent();
