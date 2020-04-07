@@ -172,17 +172,17 @@
 											</div>
 											<div class="el-accoun-auth-right">
 												<h5>手机认证</h5>
-<#--												<#if userinfo.isBindPhone >-->
+												<#if userinfo.isBindPhone >
 												<p>
 													已认证
 													<a href="#">查看</a>
 												</p>
-<#--												<#else>-->
+												<#else>
 												<p>
 													未认证
 													<a href="javascript:;" id="showBindPhoneModal">立刻绑定</a>
 												</p>
-<#--												</#if>												-->
+												</#if>
 											</div>
 											<div class="clearfix"></div>
 											<p class="info">可以收到系统操作信息,并增加使用安全性</p>
@@ -237,7 +237,7 @@
 			</div>
 		</div>		
 		
-<#--		<#if !userinfo.isBindPhone>-->
+		<#if !userinfo.isBindPhone>
 		<div class="modal fade" id="bindPhoneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
@@ -269,7 +269,7 @@
 		    </div>
 		  </div>
 		</div>
-<#--		</#if>-->
+		</#if>
 		
 		
 <#--		<#if !userinfo.isBindEmail>-->

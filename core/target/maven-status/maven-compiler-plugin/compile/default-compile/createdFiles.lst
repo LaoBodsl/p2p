@@ -1,3 +1,4 @@
+com/p2p/base/vo/VerifyCodeVO.class
 com/p2p/base/util/BidConst.class
 com/p2p/base/mapper/UserinfoMapper.class
 com/p2p/base/util/UserContext.class
@@ -7,6 +8,8 @@ com/p2p/base/query/QueryObject.class
 com/p2p/base/mapper/IplogMapper.class
 com/p2p/base/service/Impl/IAcountServiceImpl.class
 com/p2p/base/domain/SystemDictionary.class
+com/p2p/base/util/BitStatesUtils.class
+com/p2p/base/service/VerifyCodeService.class
 com/p2p/base/query/PageResult.class
 com/p2p/base/util/JSONResult.class
 com/p2p/base/mapper/SystemDictionaryMapper.class
@@ -15,6 +18,7 @@ com/p2p/base/mapper/AccountMapper.class
 com/p2p/base/service/IplogService.class
 com/p2p/base/mapper/SystemDictionaryItemMapper.class
 com/p2p/base/domain/Account.class
+com/p2p/base/service/Impl/VerifyCodeServiceImpl.class
 com/p2p/base/domain/Userinfo.class
 com/p2p/base/util/DateUtil.class
 com/p2p/base/domain/SystemDictionaryItem.class

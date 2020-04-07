@@ -6,4 +6,6 @@ public interface UserinfoService {
     void update(Userinfo userinfo);
     void add(Userinfo userinfo);
     Userinfo get(long id);
+
+    void bindPhone(String phoneNumber, String verifyCode);
 }

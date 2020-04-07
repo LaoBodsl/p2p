@@ -14,4 +14,9 @@ public class BidConst {
     public static final BigDecimal INIT_BORROW_LIMIT=new BigDecimal("5000.0000");//初始额度
     public static final String DEFAULT_ADMIN_NAME="admin";
     public static final String DEFAULT_ADMIN_PASSWORD="1111";
+
+    /**
+     * 手机验证码有效时间
+     */
+    public static final int VERIFYCODE_VAILDATE_SECOND=300;
 }

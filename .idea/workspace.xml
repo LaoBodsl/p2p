@@ -7,14 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6335aed-9792-405d-a57a-4ecdcbf2d672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/util/LoginCheckInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/util/RequireLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/VerifyCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/VerifyCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BitStatesUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/vo/VerifyCodeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/VerifyCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Userinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/UserinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/UserinfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/UserContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/UserContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Userinfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/p2p.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/p2p.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/IplogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/resources/applicationContext_website.xml" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/resources/applicationContext_website.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/target/tomcat/logs/access_log.2020-04-06" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/tomcat/logs/access_log.2020-04-06" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/target/classes/applicationContext_website.xml" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/classes/applicationContext_website.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +70,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>is</find>
-      <find>isBindEm</find>
-      <find>登录</find>
-      <find>登录记录</find>
-      <find>ip</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,14 +109,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -122,11 +125,11 @@
       <recent name="com.p2p.base.service.Impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util" />
       <recent name="$PROJECT_DIR$/mgrsite/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/mgrsite/src/main/webapp" />
       <recent name="$PROJECT_DIR$/mgrsite/src/main/resources" />
       <recent name="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views" />
-      <recent name="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.website [tomcat7:run]">
@@ -258,7 +261,7 @@
       <workItem from="1586045319322" duration="3262000" />
       <workItem from="1586060903340" duration="18000" />
       <workItem from="1586060937633" duration="424000" />
-      <workItem from="1586064601193" duration="11374000" />
+      <workItem from="1586064601193" duration="20593000" />
     </task>
     <servers />
   </component>
@@ -270,10 +273,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="209" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1586082868005" />
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1586145176881">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1586264680187">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586145176881" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586264680187" />
     <state x="328" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586060915067">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -290,22 +293,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="406" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800@0.0.1280.800" timestamp="1586145858762" />
-    <state width="1238" height="51" key="GridCell.Tab.0.bottom" timestamp="1586146602272">
+    <state width="1238" height="192" key="GridCell.Tab.0.bottom" timestamp="1586265631945">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="51" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586146602272" />
-    <state width="1238" height="51" key="GridCell.Tab.0.center" timestamp="1586146602271">
+    <state width="1238" height="192" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586265631945" />
+    <state width="1238" height="192" key="GridCell.Tab.0.center" timestamp="1586265631945">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="51" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586146602271" />
-    <state width="1238" height="51" key="GridCell.Tab.0.left" timestamp="1586146602271">
+    <state width="1238" height="192" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586265631945" />
+    <state width="1238" height="192" key="GridCell.Tab.0.left" timestamp="1586265631944">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="51" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586146602271" />
-    <state width="1238" height="51" key="GridCell.Tab.0.right" timestamp="1586146602272">
+    <state width="1238" height="192" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586265631944" />
+    <state width="1238" height="192" key="GridCell.Tab.0.right" timestamp="1586265631945">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="51" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586146602272" />
+    <state width="1238" height="192" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586265631945" />
+    <state x="141" y="23" key="SettingsEditor" timestamp="1586167814212">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="141" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1586167814212" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1586145407371">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

@@ -1,5 +1,6 @@
 package com.p2p.base.domain;
 
+import com.p2p.base.util.BitStatesUtils;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,4 +23,19 @@ public class Userinfo extends BaseDomain{
     private SystemDictionaryItem educationBackground;//
     private SystemDictionaryItem houseCondition;//
 
+    /**
+     * 添加状态码
+     * @param state
+     */
+    public void addState(long state){
+        this.setBitState(BitStatesUtils.addState(this.bitState,state));
+    }
+
+    public void removeState(long state){
+        this.setBitState(BitStatesUtils.removeState(this.bitState,state));
+    }
+
+    public boolean getIsBindPhone(){
+        return BitStatesUtils.hasState(this.bitState,BitStatesUtils.OP_BIND_PHONE);
+    }
 }
