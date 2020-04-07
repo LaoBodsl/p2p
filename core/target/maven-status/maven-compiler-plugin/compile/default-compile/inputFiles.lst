@@ -2,6 +2,7 @@
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Userinfo.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/LogininfoMapper.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/Impl/IAcountServiceImpl.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/BitStatesUtils.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/IplogMapper.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/JSONResult.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Account.java
@@ -12,9 +13,11 @@
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/UserContext.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/query/PageResult.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/IAcountService.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/VerifyCodeService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/IplogService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/LogininnfoService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/Impl/IplogServicelmpl.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/vo/VerifyCodeVO.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/SystemDictionary.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/query/QueryObject.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java
@@ -24,6 +27,7 @@
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/UserinfoMapper.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/BaseDomain.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/mapper/SystemDictionaryMapper.java
+/Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/Impl/VerifyCodeServiceImpl.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/service/UserinfoService.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/util/BidConst.java
 /Users/laobo/Desktop/p2p/core/src/main/java/com/p2p/base/domain/Iplog.java

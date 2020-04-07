@@ -71,3 +71,15 @@
 0:0:0:0:0:0:0:1 - - [07/Apr/2020:21:22:37 +0800] "POST /sendVerifyCode.do HTTP/1.1" 200 38 http-bio-8080-exec-6 16
 0:0:0:0:0:0:0:1 - - [07/Apr/2020:21:22:53 +0800] "POST /bindPhone.do HTTP/1.1" 200 38 http-bio-8080-exec-7 133
 0:0:0:0:0:0:0:1 - - [07/Apr/2020:21:22:53 +0800] "GET /personal.do HTTP/1.1" 200 11791 http-bio-8080-exec-8 16
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:33:55 +0800] "GET /register.html HTTP/1.1" 304 - http-bio-8080-exec-3 64
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:34:04 +0800] "POST /checkUsername.do HTTP/1.1" 500 25603 http-bio-8080-exec-5 329
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:34:35 +0800] "POST /login.do HTTP/1.1" 500 25603 http-bio-8080-exec-6 245
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:40:42 +0800] "POST /login.do HTTP/1.1" 200 38 http-bio-8080-exec-1 864
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:40:44 +0800] "GET /personal.do HTTP/1.1" 200 13335 http-bio-8080-exec-2 249
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:40:52 +0800] "POST /sendVerifyCode.do HTTP/1.1" 200 38 http-bio-8080-exec-4 580
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:45:01 +0800] "POST /login.do HTTP/1.1" 200 38 http-bio-8080-exec-1 685
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:45:02 +0800] "GET /personal.do HTTP/1.1" 200 13335 http-bio-8080-exec-3 323
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:45:08 +0800] "POST /sendVerifyCode.do HTTP/1.1" 200 38 http-bio-8080-exec-4 255
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:50:24 +0800] "POST /login.do HTTP/1.1" 200 38 http-bio-8080-exec-1 787
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:50:26 +0800] "GET /personal.do HTTP/1.1" 200 13335 http-bio-8080-exec-3 253
+0:0:0:0:0:0:0:1 - - [07/Apr/2020:23:50:31 +0800] "POST /sendVerifyCode.do HTTP/1.1" 200 38 http-bio-8080-exec-4 59
