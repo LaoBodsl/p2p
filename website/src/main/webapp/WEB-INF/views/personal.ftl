@@ -195,17 +195,17 @@
 											</div>
 											<div class="el-accoun-auth-right">
 												<h5>邮箱认证</h5>
-<#--												<#if userinfo.isBindEmail>-->
+												<#if userinfo.isBindEmail>
 												<p>
 													已绑定
 													<a href="#">查看</a>
 												</p>
-<#--												<#else>-->
+												<#else>
 												<p>
 													未绑定
 													<a href="javascript:;" id="showBindEmailModal">去绑定</a>
 												</p>
-<#--												</#if>-->
+												</#if>
 											</div>
 											<div class="clearfix"></div>
 											<p class="info">您可以设置邮箱来接收重要信息</p>

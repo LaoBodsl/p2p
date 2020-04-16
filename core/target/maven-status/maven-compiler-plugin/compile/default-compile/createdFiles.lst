@@ -3,6 +3,7 @@ com/p2p/base/util/BidConst.class
 com/p2p/base/mapper/UserinfoMapper.class
 com/p2p/base/util/UserContext.class
 com/p2p/base/service/Impl/UserinfoServiceImpl.class
+com/p2p/base/domain/MailVerify.class
 com/p2p/base/service/Impl/IplogServicelmpl.class
 com/p2p/base/query/QueryObject.class
 com/p2p/base/mapper/IplogMapper.class
@@ -23,5 +24,6 @@ com/p2p/base/domain/Userinfo.class
 com/p2p/base/util/DateUtil.class
 com/p2p/base/domain/SystemDictionaryItem.class
 com/p2p/base/service/UserinfoService.class
+com/p2p/base/mapper/MailVerifyMapper.class
 com/p2p/base/query/IplogQueryObject.class
 com/p2p/base/service/IAcountService.class

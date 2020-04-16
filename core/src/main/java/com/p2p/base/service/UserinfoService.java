@@ -8,4 +8,10 @@ public interface UserinfoService {
     Userinfo get(long id);
 
     void bindPhone(String phoneNumber, String verifyCode);
+
+    Userinfo getCurrent();//得到当前userinfo对象
+
+    void sendVerifyEmail(String email);
+
+    void bindEmail(String key);
 }
