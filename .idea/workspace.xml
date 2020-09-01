@@ -7,30 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6335aed-9792-405d-a57a-4ecdcbf2d672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/MailVerify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/email.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/checkmail_result.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/domain/Userinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/mapper/UserinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/Impl/UserinfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/UserinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/service/UserinfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/p2p/base/util/BidConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/domain/Userinfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/mapper/UserinfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/Impl/UserinfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/Impl/UserinfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/UserinfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/service/UserinfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/p2p/base/util/BidConst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/p2p.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/p2p.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/java/com/p2p/base/controller/PersonalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/main/webapp/WEB-INF/views/personal.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/target/classes/com/p2p/base/controller/PersonalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/classes/com/p2p/base/controller/PersonalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/target/tomcat/logs/access_log.2020-04-08" beforeDir="false" afterPath="$PROJECT_DIR$/website/target/tomcat/logs/access_log.2020-04-08" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,11 +257,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.SmsTest.testSend" />
       <item itemvalue="Maven.eloan-mockserver [tomcat7:run]" />
       <item itemvalue="Maven.mgrsite [tomcat7:run]" />
       <item itemvalue="Maven.mybatis_gen" />
       <item itemvalue="Maven.website [tomcat7:run]" />
-      <item itemvalue="JUnit.SmsTest.testSend" />
     </list>
     <recent_temporary>
       <list>
@@ -315,6 +292,10 @@
       <workItem from="1586060903340" duration="18000" />
       <workItem from="1586060937633" duration="424000" />
       <workItem from="1586064601193" duration="36713000" />
+      <workItem from="1589270136000" duration="4000" />
+      <workItem from="1592657439090" duration="8000" />
+      <workItem from="1593590660712" duration="7000" />
+      <workItem from="1594977256772" duration="4000" />
     </task>
     <servers />
   </component>
